@@ -123,9 +123,9 @@
 
 介绍:Replication, atomicity and order in distributed systems
 
-* [《MIT course:Distributed Systems》](http://nil.csail.mit.edu/6.824/2015/)
+* [《MIT course:Distributed Systems》](http://nil.csail.mit.edu/6.824/2018/)
 
-介绍:2015年MIT分布式系统课程主页，这次用Golang作为授课语言。[6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824/)课程主页
+介绍:2017年MIT分布式系统课程主页，用Golang作为授课语言。[6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824/)课程主页.课程的课堂测试[Past Exams](https://pdos.csail.mit.edu/6.824/quizzes.html)可以很好的考察学习的结果。对于学习分布式系统比较推荐这个课程
 
 * [《Distributed systems for fun and profit》](http://book.mixu.net/distsys/)
 
@@ -264,7 +264,7 @@
 
 介绍:分布式系统基础之操作系统学习指南.
 
-* [《分布式系统领域经典论文翻译集》](http://duanple.blog.163.com/blog/static/709717672011330101333271/)
+* [《分布式系统领域经典论文翻译集》](http://duanple.com/?p=170)
 
 介绍:分布式系统领域经典论文翻译集.
 
@@ -418,7 +418,7 @@
 
 * [《Cassandra - A Decentralized Structured Storage System》](https://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf)
 
-介绍: 分布式存储系统Cassandra剖析,推荐白皮书[Introduction to Apache Cassandra](http://www.datastax.com/wp-content/uploads/2012/08/WP-IntrotoCassandra.pdf).
+介绍: 分布式存储系统Cassandra剖析,主要讲述系统设计、客户端API、以及facebook的应用。推荐白皮书[Introduction to Apache Cassandra](http://www.datastax.com/wp-content/uploads/2012/08/WP-IntrotoCassandra.pdf).
 
 * [《What is the best resource to learn about distributed systems?》](https://www.quora.com/What-is-the-best-resource-to-learn-about-distributed-systems)
 
@@ -490,7 +490,7 @@
 
 * [《Raft: In search of an Understandable Consensus Algorithm》](https://raft.github.io/raft.pdf)
 
-介绍：aft 是一种用来管理日志复制的一致性算法。它和 Paxos 的性能和功能是一样的，但是它和 Paxos 的结构不一样；这使得 Raft 更容易理解并且更易于建立实际的系统。[中文版](http://www.infoq.com/cn/articles/raft-paper)
+介绍：raft 是一种用来管理日志复制的一致性算法。它和 Paxos 的性能和功能是一样的，但是它和 Paxos 的结构不一样；这使得 Raft 更容易理解并且更易于建立实际的系统。[中文版](http://www.infoq.com/cn/articles/raft-paper). [](https://github.com/pingcap/raft-rs)
 
 * [《Raft: Understandable Distributed Consensus》](http://thesecretlivesofdata.com/raft/)
 
@@ -520,9 +520,9 @@
 
 介绍：分布式文件系统综述
 
-* [《Concepts of Concurrent Programming》](ftp://ftp.sei.cmu.edu/pub/education/cm24.pdf)
+* [《Concepts of Concurrent Programming》](https://resources.sei.cmu.edu/asset_files/CurriculumModule/1990_007_001_15815.pdf)
 
-介绍：并行编程的概念,同时推荐[卡内基梅隆FTP](ftp://ftp.sei.cmu.edu/pub/education/)
+介绍：并行编程的概念,同时推荐[卡内基梅隆工程师数字图书馆](https://resources.sei.cmu.edu/library/)
 
 * [《Concurrency Control Performance Modeling:Alternatives and Implications》](https://www.cs.berkeley.edu/~brewer/cs262/ConcControl.pdf)
 
@@ -718,7 +718,7 @@
 
 * [《Large-scale cluster management at Google with Borg》](research.google.com/pubs/archive/43438.pdf)
 
-介绍:Google使用Borg进行大规模集群的管理,[伯克利大学ppt介绍](http://people.eecs.berkeley.edu/~istoica/classes/cs294/15/notes/09-borg.pdf),[中文版](http://my.oschina.net/HardySimpson/blog?search=Borg)
+介绍:Google使用Borg进行大规模集群的管理,[伯克利大学ppt介绍](http://people.eecs.berkeley.edu/~istoica/classes/cs294/15/notes/09-borg.pdf),[中文版](https://ying-zhang.github.io/cloud/2017/eurosys15-borg-cn/)
 
 * [《Lock Free Programming Practice》](http://www.yebangyu.org/LockFreeProgrammingPractice.pdf)
 
@@ -842,4 +842,119 @@
 
 * [《Resources for Getting Started with Distributed Systems》](https://caitiem.com/2017/09/07/getting-started-with-distributed-systems/)
 
-介绍:分布式系统初学者资源
+介绍:分布式系统初学者资源.
+
+* [《Building a Distributed Log from Scratch, Part 1: Storage Mechanics》](https://bravenewgeek.com/building-a-distributed-log-from-scratch-part-1-storage-mechanics/)
+
+介绍:从0开始构建一个分布式日志。第一部分主要是讲日志的存储，截止到现在已经写到[数据复制](https://bravenewgeek.com/building-a-distributed-log-from-scratch-part-2-data-replication/)、[扩容之日志消耗](https://bravenewgeek.com/building-a-distributed-log-from-scratch-part-3-scaling-message-delivery/)、[权衡与思考](https://bravenewgeek.com/building-a-distributed-log-from-scratch-part-4-trade-offs-and-lessons-learned/)、[快速实战](https://bravenewgeek.com/building-a-distributed-log-from-scratch-part-5-sketching-a-new-system/)。另外推荐作者写的[现实世界中的分布式系统推论](https://bravenewgeek.com/from-the-ground-up-reasoning-about-distributed-systems-in-the-real-world/)
+
+* [《CS 525 Spring 2018 Advanced Distributed Systems》](https://courses.engr.illinois.edu/cs525/sp2018/index.html)
+
+介绍:伊利诺伊大学分布式系统进阶课程，涉及内容云的前世今生，大公司的在分布式计算上的工作（Mapreduce参考）、P2P系统滚、KV存储、基本的分布式算法（时钟同步，锁）、强一致性、分布式在机器学习上的应用、流处理、认证、事务处理、存储与复制、最终一致性、图处理、集群调度、分布式系统bug跟踪和性能测试、安全、缓存。
+
+* [《Notes on Distributed Systems for Young Bloods》](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
+
+介绍:这篇文章没有理论，适合新手阅读分布式系统实践笔记
+
+* [《Design patterns for container-based distributed systems》](https://www.usenix.org/system/files/conference/hotcloud16/hotcloud16_burns.pdf)
+
+介绍:基于容器的分布式系统设计模式，文中提到了，单容器模式，所有的服务都集成在一个容器里面。单节点多容器模式，类似于kubernetes的Pods（任务组）。一个服务跨多个容器。对于这种模式可以分为Sidecar模式:譬如一个Web服务。Web由一个容器提供，日志处理由一个Logsaver容器提供。Ambassador模式（外交官模式）类似于SLB的设计模式，中间有一个代理容器用来分发功能到子容器。Adapter模式（适配器模式）主要是目的是想分布的执行和存储，统一的监控和管理。有点类似监控系统的设计，日志数据的输入不一，但是统一结果输出。多节点应用模式：这个分为选主模式（核心是选主算法）。Work Queue模式（工作队列模式）类似大规模电商系统的订单处理设计。Scatter/gather模式：有点类似MapRedue架构，分片处理，最后汇总结果。文章推荐[容器设计模式](http://www.infoq.com/cn/articles/kubernetes-and-cloud-native-app-container-design-pattern)
+
+* [《Making The Case For Building Scalable Stateful Services In The Modern Era》](http://highscalability.com/blog/2015/10/12/making-the-case-for-building-scalable-stateful-services-in-t.html)
+
+介绍: 在处理分布式系统的时候，很多经验告诉我们要尽量让服务无状态。而在实际分布式系统中，有状态的服务是一致存在的。例如消息队列、数据库存储服务。本文介绍了如何构建有状态的服务，如果保证有状态化服务的高可用。
+
+* [《LHD: Improving Cache Hit Rate by Maximizing Hit Density》](http://www.cs.cmu.edu/~beckmann/publications/papers/2018.nsdi.lhd.pdf)
+
+介绍:使用Maximizing Hit Density提高缓存命中.
+
+* [《Principles Of Chaos Engineering》](http://principlesofchaos.org/)
+
+介绍:混沌工程是在分布式系统上进行实验的学科, 目的是建立对系统抵御生产环境中失控条件的能力以及信心。
+大规模分布式软件系统的发展正在改变软件工程。作为一个行业，我们很快采用了提高开发灵活性和部署速度的实践。紧跟着这些好处的一个紧迫问题是：我们对投入生产的复杂系统中有多少信心？
+
+* [《The Paxos Algorithm》](https://www.youtube.com/watch?v=d7nAGI_NZPk)
+
+介绍:Google SRE 讲解分布式系统Paxos算法。
+
+* [《Time Series Database Lectures 》](https://db.cs.cmu.edu/seminar2017/)
+
+介绍:[Andy Pavlo](http://www.cs.cmu.edu/~pavlo/)组织的时序数据库系列演讲分享,InfluxDB存储引擎、QuasarDB内部剖析、TimescaleDB成长、Two Sigma时序数据库实践。
+
+* [《Andy CMU course：Advanced Database Systems》](https://15721.courses.cs.cmu.edu/spring2017/schedule.html)
+
+介绍:[Andy Pavlo](http://www.cs.cmu.edu/~pavlo/)在卡内基梅隆大学的高级数据库课程，以论文导读的形式。有[视频](https://www.youtube.com/playlist?list=PLSE8ODhjZXjYgTIlqf4Dy9KQpQ7kn1Tl0)。并发控制，乐观并发控制、多版本并发控制、OLAP索引、数据库压缩、存储模型、日志协议、检查点协议、优化器的实现、执行计划、并行join、查询编译、内存数据库.
+
+* [《CASPaxos: Replicated State Machines without logs》](https://arxiv.org/abs/1802.07000)
+
+介绍:这篇论文是Paxos算法变种，规避了Paxos算法的复杂性。同时达到了RSM的高性能要求。[github](https://github.com/rystsov/caspaxos) 上有开发者对这个算法进行了总结。已经有多种语言的实现方式。譬如Js和Golang版本的实现.
+
+* [《Facebook Immune System》](https://css.csail.mit.edu/6.858/2012/readings/facebook-immune.pdf)
+
+介绍:Facebook反作弊系统论文。
+
+* [《Logical Physical Clocks and Consistent Snapshots in Globally Distributed Databases》](https://cse.buffalo.edu/tech-reports/2014-04.pdf)
+
+介绍:混合逻辑时钟。
+
+* [《Riffle: optimized shuffle service for large-scale data analytics》](https://dl.acm.org/citation.cfm?id=3190534)
+
+介绍:Riffle：大规模分布式系统中的数据分析优化。
+
+* [《Omega: flexible, scalable schedulers for large compute clusters》](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/41684.pdf)
+
+介绍:本文描述了Google第二代容器化调度服务Omega的设计与诞生。作者也有一份[keynote](https://people.csail.mit.edu/malte/pub/talks/2013-04-17_eurosys-omega.pdf)。相关介绍[视频](https://www.youtube.com/watch?v=Zf__a9ReiPE)
+
+* [《Large-scale Incremental Processing Using Distributed Transactions and Notifications》](http://notes.stephenholiday.com/Percolator.pdf)
+
+介绍:Percolator号称其取代MapReduce之后，Google的索引更新速度提升了100倍。它究竟是如何实现 “100” 这个刺眼的数字？当今的并行计算世界真的有如此大的提升空间吗？当我们满心欢喜以为又有新的算法、新的并行计算架构可以学习时，她却又为何跟你聊起了分布式事务？这篇文章将为您揭晓。[中文版](http://www.importnew.com/2896.html)
+
+* [《Designing Data-Intensive Applications》](http://dataintensive.net/)
+
+介绍:设计数据密集型应用是一本讲述分布式系统的数据，作者是卡内基梅隆大学的研究员。本书的质量很高。详细讲述各种数据存储，包括关系型数据库、NoSQL、大数据存储、流处理系统等等，由浅入深、拨丝抽茧.适合给刚刚步入分布式系统大门的朋友.[简译版](https://vonng.gitbooks.io/ddia-cn/content/)
+
+* [《CSE 552 Fall 2013 Lecture Topics》](https://courses.cs.washington.edu/courses/cse552/13au/calendar/lecturelist.html)
+
+介绍:华盛顿大学分布式系统课程，老师是Tom Anderson。
+
+* [《Kafka: a Distributed Messaging System for Log Processing》](http://notes.stephenholiday.com/Kafka.pdf)
+
+介绍:这篇论文是Kafka的开发团队所著，讲述Kafka的设计和架构，在Linkedin中应用以及性能评估，相当于是消息系统领域的"GFS"论文。
+
+* [《Workload Analysis of a Large-Scale Key-Value Store》](http://www.ece.eng.wayne.edu/~sjiang/pubs/papers/atikoglu12-memcached.pdf)
+
+介绍:这篇论文分析facebook在大规模使用Memcached的应用经验。如果高效的在分布式系统中利用缓存。通过缓存系统，研究员可以像tcpdump一样保存请求进行数据分析。如果是遇到大规模缓存使用的场景还是挺值得阅读。
+
+* [《F4: Facebook's Warm BLOB Storage System》](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-muralidhar.pdf)
+
+介绍:F4 是 Facebook 为了降低存储成本而开发的，应用于只读可删除不可写场景的，对象存储系统。F4是建立在HDFS上，并阐述了它是如何应对HDFS的几处局限（即，增加了cross-data center replication和使用纠删码来减少复制因子）。通常，Facebook开发一个系统，都是非常实用的，都是为他们真实的使用案例量身打造的。
+
+* [《Towards Optimization-Safe Systems: Analyzing the Impact of Undefined Behavior》](http://www.cs.cmu.edu/~15712/papers/wang13.pdf)
+
+介绍:这篇论文是[SOSP '13](https://www.sigops.org/s/conferences/sosp/2013/)的论文。描述了各种由于编译器优化导致的正常人很难发现的 Bug。下面摘录一篇[阅读笔记](https://github.com/dyweb/papers-notebook#bug):
+```
+Undefined behavior 是编程语言规范对某段代码可能产生的某些执行结果未定义。Unstable code 就是在程序实际的执行过程中，由于涉及到undefined behavior，从而无法被编译器翻译（直接略过）的代码段。
+
+STACK会在Assumption Δ被允许和不允许的情况下分别模拟编译。
+
+先模拟假设不成立的情况进行一次编译；
+模拟假设成立的情况进行一次编译；
+查看前两步的执行结果有没有区别，有区别的地方就是 unstable code。
+如果执行第二步时得不到准确的结果，那么会漏报一些unstable code；如果执行第一步时得不到准确的结果，就会产生误报(false warning / false positive)。目前stack给出的Undefined behavior pattern 可能不齐全。
+
+对于程序员来说，通过fix bug或者去掉一些会被编译器当做是undefined behavior的代码；对于编译器来说，可以集成一些现有的bug-finding的工具，或者利用STACK的方式来判定unstable code；完善编程语言的specification，定义更多的代码执行规则，减少undefined behavior的产生。
+
+STACK为了使可扩展性更高，在计算Δ = ∀e:Reach(e) → ¬Undef(e)的时候做了一些近似运算，使最后得到的结果可能会漏掉一些unstable code。STACK为了简化和滤过某些查询用到的constraint solver如果发生了timeout，也会出现漏报的情况。因此，STACK为了更好的扩展性，牺牲了一定的可靠性（精度）。
+```
+
+* [《The Tail At Scale》](https://cseweb.ucsd.edu/~gmporter/classes/fa17/cse124/post/schedule/p74-dean.pdf)
+
+介绍:Jeff Dean 2013年发表的文章，讲述当用户的请求依赖大规模分布式系统来协作完成时，如何保证请求的响应时间？。里面提到几个关键：任务拆分、区分定时任务和后台任务、服务间调用超时处理、热点数据多副本.
+
+* [《ZooKeeper: Wait-free coordination for Internet-scale systems》](https://www.usenix.org/legacy/event/atc10/tech/full_papers/Hunt.pdf)
+
+介绍: ZooKeeper是一个分布式协调组件，它提供了一系列的基本原语，增、删、读、监听。例如这些可以实现很多高级的原语。例如锁（Zookeeper部署锁服务）、配置管理、主从管理。本文主要讲述了它的设计、应用以及测试结果。其中也讲到了它的高可用问题，是Chubby的开源版本.
+
+* [《Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases》](https://www.allthingsdistributed.com/files/p1041-verbitski.pdf)
+
+介绍:Amazon Aurora是NewSQL的代表作品之一，与[TiDB](https://github.com/pingcap/tidb)相比较有一些不同。不过两者都是为云而生的数据库，对横向伸缩天生的良好支持、failover。从论文中可以知道aurora通过log如何实现改善数据库的性能。Aurora的核心思想是尽可能的利用存储的性能，把计算节点下推到存储节点处理。
